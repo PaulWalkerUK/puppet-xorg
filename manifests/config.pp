@@ -1,8 +1,5 @@
-# @summary A short summary of the purpose of this class
+# @summary This class handles xorg configuration
 #
-# A description of what this class does
-#
-# @example
-#   include xorg::config
+# @api private
 class xorg::config {
 }
