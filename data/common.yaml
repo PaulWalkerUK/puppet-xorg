@@ -1,1 +1,9 @@
 ---
+xorg::xorg_apps_manage: true
+xorg::xorg_apps_ensure: present
+xorg::xorg_init_manage: true
+xorg::xorg_init_ensure: present
+xorg::xorg_server_manage: true
+xorg::xorg_server_ensure: present
+xorg::xorg_xterm_manage: true
+xorg::xorg_xterm_ensure: present
