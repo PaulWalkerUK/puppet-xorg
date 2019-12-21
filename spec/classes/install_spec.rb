@@ -6,14 +6,14 @@ describe 'xorg::install' do
       let(:facts) { os_facts }
 
       it { is_expected.to compile }
-      
+
       it { is_expected.to contain_package('virtualbox-guest-utils-nox').with(ensure: 'absent') }
       it { is_expected.to contain_package('virtualbox-guest-utils').with(ensure: 'present') }
-      
+
       it { is_expected.to contain_package('xorg').with(ensure: 'present') }
       it { is_expected.to contain_package('virtualbox-guest-modules-arch').with(ensure: 'present') }
       it { is_expected.to contain_package('mesa').with(ensure: 'present') }
-      
+
       it { is_expected.to contain_package('xorg-server').with(ensure: 'present') }
       it { is_expected.to contain_package('xorg-apps').with(ensure: 'present') }
       it { is_expected.to contain_package('xorg-xinit').with(ensure: 'present') }
