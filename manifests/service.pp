@@ -2,5 +2,4 @@
 #
 # @api private
 class xorg::service {
-  service { 'vboxservice': ensure => 'running' }
 }

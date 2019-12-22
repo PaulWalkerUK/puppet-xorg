@@ -2,7 +2,7 @@
 #
 # This is very simple and at the moment only sets up Xorg Server
 #
-# @example
+# @example Basic usage
 #   include xorg
 class xorg {
   contain xorg::install

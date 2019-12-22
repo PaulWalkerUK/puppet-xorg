@@ -7,9 +7,6 @@ describe 'xorg::install' do
 
       it { is_expected.to compile }
 
-      it { is_expected.to contain_package('virtualbox-guest-utils-nox').with(ensure: 'absent') }
-      it { is_expected.to contain_package('virtualbox-guest-utils').with(ensure: 'present') }
-
       it { is_expected.to contain_package('xorg-server').with(ensure: 'present') }
     end
   end
