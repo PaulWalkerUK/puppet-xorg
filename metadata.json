@@ -2,9 +2,11 @@
   "name": "paulwalkeruk-xorg",
   "version": "0.1.0",
   "author": "Paul Walker",
-  "summary": "",
+  "summary": "This module provides simple installation/setup of Xorg",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "https://github.com/PaulWalkerUK/puppet-xorg",
+  "project_page": "https://github.com/PaulWalkerUK/puppet-xorg",
+  "issues_url": "https://github.com/PaulWalkerUK/puppet-xorg/issues",
   "dependencies": [
 
   ],
