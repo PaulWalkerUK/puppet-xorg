@@ -26,7 +26,7 @@ The following packages will be installed:
 
 Since there are currently no parameters, you only need:
 
-```
+```puppet
 include xorg
 ```
 
@@ -34,7 +34,7 @@ include xorg
 
 There are currently no partameters, so the only thing you can do is:
 
-```
+```puppet
 include xorg
 ```
 
