@@ -7,10 +7,10 @@ class xorg::install {
   package { 'virtualbox-guest-utils': ensure => 'present' }
 
   # Core packages
-  package { 'xorg-server': ensure => 'present' } ##bare minimum ?
+  package { 'xorg-server': ensure => 'present' }
 
-  # Addons
-  #package { 'xorg-apps': ensure => 'present' } ##extra?
-  #package { 'xterm': ensure => 'present' }
-  #package { 'xorg-xinit': ensure => 'present' } ##allow manually start xorg display server. Not required if using Display Manager
+  # Addons - not required, maybe make optional later?
+  # package { 'xorg-apps': ensure => 'present' } ## extra apps?
+  # package { 'xterm': ensure => 'present' } ## terminal
+  # package { 'xorg-xinit': ensure => 'present' } ## allow manually start xorg display server. Not required if using Display Manager
 }
