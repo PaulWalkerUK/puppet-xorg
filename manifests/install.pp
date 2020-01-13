@@ -5,6 +5,10 @@ class xorg::install {
   # Core packages
   package { 'xorg-server': ensure => 'present' }
 
+  if ($xorg::keyboard_layout != '') {
+    package { 'libxkbcommon': ensure => 'present' }
+  }
+
   # Addons - not required, maybe make optional later?
   # package { 'xorg-apps': ensure => 'present' } ## extra apps?
   # package { 'xterm': ensure => 'present' } ## terminal
