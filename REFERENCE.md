@@ -23,9 +23,30 @@ This is very simple and at the moment only sets up Xorg Server
 
 #### Examples
 
-##### 
+##### Basic usage
 
 ```puppet
 include xorg
 ```
+
+##### Set the keyboard layout to GB (UK)
+
+```puppet
+class { 'xorg' :
+  keyboard_layout => 'gb',
+}
+```
+
+#### Parameters
+
+The following parameters are available in the `xorg` class.
+
+##### `keyboard_layout`
+
+Data type: `String`
+
+If set, the keyboard layout will be set to this. It sets the `layout` as
+described in https://www.freedesktop.org/software/systemd/man/localectl.html
+
+Default value: ''
 
